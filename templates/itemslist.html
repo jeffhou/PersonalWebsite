@@ -1,0 +1,30 @@
+<doctype html>
+<title>Battle Screen</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static',
+filename='style.css') }}" />
+<div class="main-screen-container">
+  <div class="main-screen-container-title">Battle</div>
+  <!--
+    TODO: make title dynamic based on what is going on in the container.
+  -->
+  <div class="monster-info">
+    <img src="http://flask.pocoo.org/docs/_static/flask.png" class="monster-img"/>
+    You encounter a {{ name }}.
+  </div>
+  <div class="items-list">
+    <div class="items-list-title">
+      Items
+    </div>
+    {% for item in items %}
+      <div class="item-button">
+        <a href="attack"><span class="link-spanner"></span></a>
+        {{ item }}
+      </div>
+    {% endfor %}
+    <div class="items-list-back-button">
+      <a href="../battle"><span class="link-spanner"></span></a>
+      BACK
+    </div>
+  </div>
+</div>
+
