@@ -74,7 +74,11 @@ def show_post(post_id):
 
 @app.route("/")
 def index():
-  return "Hello World!"
+  return render_template('index.html')
+
+@app.route("/faq")
+def view_faq():
+  return render_template('faq.html')
 
 @app.route("/index.py")
 def something():

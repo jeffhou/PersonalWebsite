@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="style.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='style2.css') }}" media="screen" rel="stylesheet" type="text/css">
     <title>Historically Inaccurate RPG</title>
   </head>
   <body>
@@ -12,7 +12,7 @@
       <div class="top">
         <div class="item">
           <h3>Home</h3>
-          <a href="index.html"><span class="link-spanner"></span></a>
+          <a href="/"><span class="link-spanner"></span></a>
         </div>
         <div class="item">
           <h3>Posts</h3>
@@ -20,7 +20,7 @@
         </div>
         <div class="item">
           <h3>FAQ</h3>
-          <a href="faq.html"><span class="link-spanner"></span></a>
+          <a href="faq"><span class="link-spanner"></span></a>
         </div>
         <div class="item">
           <h3>About</h3>
